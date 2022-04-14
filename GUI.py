@@ -18,7 +18,7 @@ gpio.output(ign_pin,gpio.HIGH)
 ign_switch_on = True
 
 #Fuel Sensor pin
-fuel_pin = 22
+fuel_pin = 27
 gpio.setup(fuel_pin,gpio.OUT)
 gpio.output(fuel_pin,gpio.HIGH)
 fuel_switch_on = True
@@ -133,11 +133,11 @@ if __name__ =="__main__":
     ign_switch = Button(root, image = off, command = ign_switch_pressed)
     ign_switch.place(x=200, y = 20)
 
-	fuel_label = Label(root, text = "Fuel switch", font=("Arial", 20))
-    fuel_label.place(x=10,y=60)
+    fuel_label = Label(root, text = "Fuel switch", font=("Arial", 20))
+    fuel_label.place(x=10,y=80)
 
     fuel_switch = Button(root, image = off, command = fuel_switch_pressed)
-    fuel_switch.place(x=200, y = 50)
+    fuel_switch.place(x=200, y = 70)
 
     camera_button  =Button (root, text = "Start Camera", font=("Arial", 20),command = camera_switch)
     camera_button.place(x= 10, y= 150)
