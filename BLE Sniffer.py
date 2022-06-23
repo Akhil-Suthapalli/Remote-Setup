@@ -7,4 +7,11 @@ Created on Tue May  3 11:40:02 2022
 @Mobile: +91 9494475575
 """
 
-import SnifferAPI
+
+from SnifferAPI import Sniffer
+
+a = Sniffer.Sniffer()
+a.setPortnum("COM8")
+a.start()
+a.scan()
+

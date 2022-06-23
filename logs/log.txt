@@ -1,0 +1,362 @@
+06-May-2022 15:02:01 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:02:01 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:06:13 (+0530) ERROR: Error opening UART.
+Traceback (most recent call last):
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 77, in __init__
+    self.uart = UART.Uart(portnum)
+  File "E:\Remote Setup\SnifferAPI\UART.py", line 11, in __init__
+    baudrate    = 115200
+  File "C:\Users\suthapalli.akhil\AppData\Local\Continuum\anaconda3\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\suthapalli.akhil\AppData\Local\Continuum\anaconda3\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\suthapalli.akhil\AppData\Local\Continuum\anaconda3\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+06-May-2022 15:06:13 (+0530) ERROR: Cannot open serial
+06-May-2022 15:06:13 (+0530) INFO: args: ()
+06-May-2022 15:06:13 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-7, initial)>>)]}
+06-May-2022 15:06:13 (+0530) INFO: board ID (random): 37
+06-May-2022 15:06:34 (+0530) INFO: closing UART
+06-May-2022 15:07:20 (+0530) INFO: args: ()
+06-May-2022 15:07:20 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-8, initial)>>)]}
+06-May-2022 15:07:20 (+0530) INFO: board ID: 8
+06-May-2022 15:07:25 (+0530) INFO: closing UART
+06-May-2022 15:07:25 (+0530) INFO: closing UART
+06-May-2022 15:07:25 (+0530) INFO: closing UART
+06-May-2022 15:07:25 (+0530) INFO: closing UART
+06-May-2022 15:08:47 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:08:47 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:08:47 (+0530) ERROR: Error opening UART.
+Traceback (most recent call last):
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 77, in __init__
+    self.uart = UART.Uart(portnum)
+  File "E:\Remote Setup\SnifferAPI\UART.py", line 11, in __init__
+    baudrate    = 115200
+  File "C:\Users\suthapalli.akhil\AppData\Local\Continuum\anaconda3\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\suthapalli.akhil\AppData\Local\Continuum\anaconda3\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\suthapalli.akhil\AppData\Local\Continuum\anaconda3\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+06-May-2022 15:08:47 (+0530) ERROR: Cannot open serial
+06-May-2022 15:08:47 (+0530) INFO: args: ()
+06-May-2022 15:08:47 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-6, initial)>>)]}
+06-May-2022 15:08:47 (+0530) INFO: board ID (random): 20
+06-May-2022 15:09:53 (+0530) INFO: closing UART
+06-May-2022 15:09:53 (+0530) INFO: closing UART
+06-May-2022 15:09:59 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:09:59 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:09:59 (+0530) INFO: args: ()
+06-May-2022 15:09:59 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-6, initial)>>)]}
+06-May-2022 15:09:59 (+0530) INFO: board ID: 8
+06-May-2022 15:12:03 (+0530) INFO: starting scan
+06-May-2022 15:12:03 (+0530) ERROR: UART Error:unicode strings are not supported, please encode to bytes: '«\x06\x00\x01\x00\x00\x07¼'
+06-May-2022 15:12:03 (+0530) INFO: closing UART
+06-May-2022 15:14:57 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:14:57 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:14:57 (+0530) ERROR: Cannot open serial
+06-May-2022 15:14:57 (+0530) INFO: args: ()
+06-May-2022 15:14:57 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-6, initial)>>)]}
+06-May-2022 15:14:57 (+0530) INFO: board ID (random): 31
+06-May-2022 15:14:57 (+0530) INFO: starting scan
+06-May-2022 15:14:57 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:14:57 (+0530) INFO: closing UART
+06-May-2022 15:15:16 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:15:16 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:15:16 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:15:16 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:15:16 (+0530) ERROR: Cannot open serial
+06-May-2022 15:15:16 (+0530) ERROR: Cannot open serial
+06-May-2022 15:15:16 (+0530) INFO: args: ()
+06-May-2022 15:15:16 (+0530) INFO: args: ()
+06-May-2022 15:15:16 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-7, initial)>>)]}
+06-May-2022 15:15:16 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-7, initial)>>)]}
+06-May-2022 15:15:16 (+0530) INFO: board ID (random): 238
+06-May-2022 15:15:16 (+0530) INFO: board ID (random): 238
+06-May-2022 15:15:16 (+0530) INFO: starting scan
+06-May-2022 15:15:16 (+0530) INFO: starting scan
+06-May-2022 15:15:16 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:15:16 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:15:16 (+0530) INFO: closing UART
+06-May-2022 15:15:16 (+0530) INFO: closing UART
+06-May-2022 15:15:19 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:15:19 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:15:19 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:15:19 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:15:19 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:15:19 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:15:19 (+0530) INFO: closing UART
+06-May-2022 15:15:19 (+0530) INFO: closing UART
+06-May-2022 15:15:19 (+0530) INFO: closing UART
+06-May-2022 15:15:19 (+0530) INFO: closing UART
+06-May-2022 15:15:19 (+0530) INFO: closing UART
+06-May-2022 15:15:19 (+0530) INFO: closing UART
+06-May-2022 15:15:19 (+0530) ERROR: Cannot open serial
+06-May-2022 15:15:19 (+0530) ERROR: Cannot open serial
+06-May-2022 15:15:19 (+0530) ERROR: Cannot open serial
+06-May-2022 15:15:19 (+0530) INFO: args: ()
+06-May-2022 15:15:19 (+0530) INFO: args: ()
+06-May-2022 15:15:19 (+0530) INFO: args: ()
+06-May-2022 15:15:19 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-8, initial)>>)]}
+06-May-2022 15:15:19 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-8, initial)>>)]}
+06-May-2022 15:15:19 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-8, initial)>>)]}
+06-May-2022 15:15:19 (+0530) INFO: board ID (random): 118
+06-May-2022 15:15:19 (+0530) INFO: board ID (random): 118
+06-May-2022 15:15:19 (+0530) INFO: board ID (random): 118
+06-May-2022 15:15:19 (+0530) INFO: starting scan
+06-May-2022 15:15:19 (+0530) INFO: starting scan
+06-May-2022 15:15:19 (+0530) INFO: starting scan
+06-May-2022 15:15:19 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:15:19 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:15:19 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:15:19 (+0530) INFO: closing UART
+06-May-2022 15:15:19 (+0530) INFO: closing UART
+06-May-2022 15:15:19 (+0530) INFO: closing UART
+06-May-2022 15:15:58 (+0530) INFO: closing UART
+06-May-2022 15:15:58 (+0530) INFO: closing UART
+06-May-2022 15:15:58 (+0530) INFO: closing UART
+06-May-2022 15:15:58 (+0530) INFO: closing UART
+06-May-2022 15:15:58 (+0530) INFO: closing UART
+06-May-2022 15:15:58 (+0530) INFO: closing UART
+06-May-2022 15:16:09 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:16:09 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:16:09 (+0530) INFO: args: ()
+06-May-2022 15:16:09 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-6, initial)>>)]}
+06-May-2022 15:16:09 (+0530) INFO: board ID: 8
+06-May-2022 15:16:09 (+0530) INFO: starting scan
+06-May-2022 15:16:09 (+0530) ERROR: UART Error:unicode strings are not supported, please encode to bytes: '«\x06\x00\x01\x00\x00\x07¼'
+06-May-2022 15:16:09 (+0530) INFO: closing UART
+06-May-2022 15:35:35 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:35:35 (+0530) INFO: closing UART
+06-May-2022 15:35:35 (+0530) ERROR: CRASH
+Traceback (most recent call last):
+  File "E:\Remote Setup\SnifferAPI\Sniffer.py", line 149, in run
+    self._setup()
+  File "E:\Remote Setup\SnifferAPI\SnifferCollector.py", line 73, in _setup
+    self._packetReader.setup()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 88, in setup
+    self.findSerialPort()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 237, in findSerialPort
+    self.sendPingReq()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 197, in sendPingReq
+    self.sendPacket(PING_REQ, [], timeout)
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 186, in sendPacket
+    self.uart.writeList(packetString, timeout)
+  File "E:\Remote Setup\SnifferAPI\UART.py", line 86, in writeList
+    nBytes = self.ser.write(array)
+  File "C:\Users\suthapalli.akhil\AppData\Local\Continuum\anaconda3\lib\site-packages\serial\serialwin32.py", line 306, in write
+    raise PortNotOpenError()
+serial.serialutil.PortNotOpenError: Attempting to use a port that is not open
+06-May-2022 15:35:39 (+0530) INFO: starting scan
+06-May-2022 15:35:39 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:35:39 (+0530) INFO: closing UART
+06-May-2022 15:36:36 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:36:36 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:36:36 (+0530) INFO: args: ()
+06-May-2022 15:36:36 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-6, initial)>>)]}
+06-May-2022 15:36:36 (+0530) INFO: board ID: 8
+06-May-2022 15:36:36 (+0530) INFO: starting scan
+06-May-2022 15:36:36 (+0530) ERROR: UART Error:unicode strings are not supported, please encode to bytes: '«\x06\x00\x01\x00\x00\r¼'
+06-May-2022 15:36:36 (+0530) INFO: closing UART
+06-May-2022 15:36:36 (+0530) ERROR: CRASH
+Traceback (most recent call last):
+  File "E:\Remote Setup\SnifferAPI\Sniffer.py", line 149, in run
+    self._setup()
+  File "E:\Remote Setup\SnifferAPI\SnifferCollector.py", line 73, in _setup
+    self._packetReader.setup()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 88, in setup
+    self.findSerialPort()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 237, in findSerialPort
+    self.sendPingReq()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 197, in sendPingReq
+    self.sendPacket(PING_REQ, [], timeout)
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 186, in sendPacket
+    self.uart.writeList(packetString, timeout)
+  File "E:\Remote Setup\SnifferAPI\UART.py", line 86, in writeList
+    nBytes = self.ser.write(array)
+  File "C:\Users\suthapalli.akhil\AppData\Local\Continuum\anaconda3\lib\site-packages\serial\serialwin32.py", line 310, in write
+    data = to_bytes(data)
+  File "C:\Users\suthapalli.akhil\AppData\Local\Continuum\anaconda3\lib\site-packages\serial\serialutil.py", line 65, in to_bytes
+    raise TypeError('unicode strings are not supported, please encode to bytes: {!r}'.format(seq))
+TypeError: unicode strings are not supported, please encode to bytes: '«\x06\x00\x01\x00\x00\r¼'
+06-May-2022 15:37:38 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:37:38 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:37:38 (+0530) ERROR: Cannot open serial
+06-May-2022 15:37:38 (+0530) INFO: args: ()
+06-May-2022 15:37:38 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-6, initial)>>)]}
+06-May-2022 15:37:38 (+0530) INFO: board ID (random): 72
+06-May-2022 15:37:38 (+0530) ERROR: CRASH
+Traceback (most recent call last):
+  File "E:\Remote Setup\SnifferAPI\Sniffer.py", line 149, in run
+    self._setup()
+  File "E:\Remote Setup\SnifferAPI\SnifferCollector.py", line 77, in _setup
+    if self._packetReader.fwversion < self.swversion:
+AttributeError: 'PacketReader' object has no attribute 'fwversion'
+06-May-2022 15:37:38 (+0530) INFO: starting scan
+06-May-2022 15:37:38 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:37:38 (+0530) INFO: closing UART
+06-May-2022 15:37:41 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:37:41 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:37:41 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:37:41 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:37:41 (+0530) ERROR: Cannot open serial
+06-May-2022 15:37:41 (+0530) ERROR: Cannot open serial
+06-May-2022 15:37:41 (+0530) INFO: args: ()
+06-May-2022 15:37:41 (+0530) INFO: args: ()
+06-May-2022 15:37:41 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-7, initial)>>)]}
+06-May-2022 15:37:41 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-7, initial)>>)]}
+06-May-2022 15:37:41 (+0530) INFO: board ID (random): 162
+06-May-2022 15:37:41 (+0530) INFO: board ID (random): 162
+06-May-2022 15:37:41 (+0530) ERROR: CRASH
+Traceback (most recent call last):
+  File "E:\Remote Setup\SnifferAPI\Sniffer.py", line 149, in run
+    self._setup()
+  File "E:\Remote Setup\SnifferAPI\SnifferCollector.py", line 77, in _setup
+    if self._packetReader.fwversion < self.swversion:
+AttributeError: 'PacketReader' object has no attribute 'fwversion'
+06-May-2022 15:37:41 (+0530) ERROR: CRASH
+Traceback (most recent call last):
+  File "E:\Remote Setup\SnifferAPI\Sniffer.py", line 149, in run
+    self._setup()
+  File "E:\Remote Setup\SnifferAPI\SnifferCollector.py", line 77, in _setup
+    if self._packetReader.fwversion < self.swversion:
+AttributeError: 'PacketReader' object has no attribute 'fwversion'
+06-May-2022 15:37:41 (+0530) INFO: starting scan
+06-May-2022 15:37:41 (+0530) INFO: starting scan
+06-May-2022 15:37:41 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:37:41 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:37:41 (+0530) INFO: closing UART
+06-May-2022 15:37:41 (+0530) INFO: closing UART
+06-May-2022 15:38:03 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:38:03 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:38:03 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:38:03 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:38:03 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:38:03 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:38:03 (+0530) INFO: closing UART
+06-May-2022 15:38:03 (+0530) INFO: closing UART
+06-May-2022 15:38:03 (+0530) INFO: closing UART
+06-May-2022 15:38:03 (+0530) INFO: closing UART
+06-May-2022 15:38:03 (+0530) INFO: closing UART
+06-May-2022 15:38:03 (+0530) INFO: closing UART
+06-May-2022 15:38:03 (+0530) ERROR: Cannot open serial
+06-May-2022 15:38:03 (+0530) ERROR: Cannot open serial
+06-May-2022 15:38:03 (+0530) ERROR: Cannot open serial
+06-May-2022 15:38:03 (+0530) INFO: args: ()
+06-May-2022 15:38:03 (+0530) INFO: args: ()
+06-May-2022 15:38:03 (+0530) INFO: args: ()
+06-May-2022 15:38:03 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-8, initial)>>)]}
+06-May-2022 15:38:03 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-8, initial)>>)]}
+06-May-2022 15:38:03 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-8, initial)>>)]}
+06-May-2022 15:38:03 (+0530) INFO: board ID (random): 53
+06-May-2022 15:38:03 (+0530) INFO: board ID (random): 53
+06-May-2022 15:38:03 (+0530) INFO: board ID (random): 53
+06-May-2022 15:38:03 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:38:03 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:38:03 (+0530) INFO: starting scan
+06-May-2022 15:38:03 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:38:03 (+0530) INFO: starting scan
+06-May-2022 15:38:03 (+0530) INFO: closing UART
+06-May-2022 15:38:03 (+0530) INFO: starting scan
+06-May-2022 15:38:03 (+0530) INFO: closing UART
+06-May-2022 15:38:03 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:38:03 (+0530) INFO: closing UART
+06-May-2022 15:38:03 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:38:03 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:38:03 (+0530) ERROR: CRASH
+Traceback (most recent call last):
+  File "E:\Remote Setup\SnifferAPI\Sniffer.py", line 149, in run
+    self._setup()
+  File "E:\Remote Setup\SnifferAPI\SnifferCollector.py", line 73, in _setup
+    self._packetReader.setup()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 88, in setup
+    self.findSerialPort()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 237, in findSerialPort
+    self.sendPingReq()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 197, in sendPingReq
+    self.sendPacket(PING_REQ, [], timeout)
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 186, in sendPacket
+    self.uart.writeList(packetString, timeout)
+  File "E:\Remote Setup\SnifferAPI\UART.py", line 86, in writeList
+    nBytes = self.ser.write(array)
+  File "C:\Users\suthapalli.akhil\AppData\Local\Continuum\anaconda3\lib\site-packages\serial\serialwin32.py", line 306, in write
+    raise PortNotOpenError()
+serial.serialutil.PortNotOpenError: Attempting to use a port that is not open
+06-May-2022 15:38:03 (+0530) ERROR: CRASH
+Traceback (most recent call last):
+  File "E:\Remote Setup\SnifferAPI\Sniffer.py", line 149, in run
+    self._setup()
+  File "E:\Remote Setup\SnifferAPI\SnifferCollector.py", line 73, in _setup
+    self._packetReader.setup()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 88, in setup
+    self.findSerialPort()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 237, in findSerialPort
+    self.sendPingReq()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 197, in sendPingReq
+    self.sendPacket(PING_REQ, [], timeout)
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 186, in sendPacket
+    self.uart.writeList(packetString, timeout)
+  File "E:\Remote Setup\SnifferAPI\UART.py", line 86, in writeList
+    nBytes = self.ser.write(array)
+  File "C:\Users\suthapalli.akhil\AppData\Local\Continuum\anaconda3\lib\site-packages\serial\serialwin32.py", line 306, in write
+    raise PortNotOpenError()
+serial.serialutil.PortNotOpenError: Attempting to use a port that is not open
+06-May-2022 15:38:03 (+0530) INFO: closing UART
+06-May-2022 15:38:03 (+0530) INFO: closing UART
+ack (most recent call last):
+  File "E:\Remote Setup\SnifferAPI\Sniffer.py", line 149, in run
+    self._setup()
+  File "E:\Remote Setup\SnifferAPI\SnifferCollector.py", line 73, in _setup
+    self._packetReader.setup()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 88, in setup
+    self.findSerialPort()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 237, in findSerialPort
+    self.sendPingReq()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 197, in sendPingReq
+    self.sendPacket(PING_REQ, [], timeout)
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 186, in sendPacket
+    self.uart.writeList(packetString, timeout)
+  File "E:\Remote Setup\SnifferAPI\UART.py", line 86, in writeList
+    nBytes = self.ser.write(array)
+  File "C:\Users\suthapalli.akhil\AppData\Local\Continuum\anaconda3\lib\site-packages\serial\serialwin32.py", line 306, in write
+    raise PortNotOpenError()
+serial.serialutil.PortNotOpenError: Attempting to use a port that is not open
+06-May-2022 15:38:03 (+0530) INFO: closing UART
+06-May-2022 15:38:08 (+0530) INFO: closing UART
+06-May-2022 15:38:08 (+0530) INFO: closing UART
+06-May-2022 15:38:08 (+0530) INFO: closing UART
+06-May-2022 15:38:08 (+0530) INFO: closing UART
+06-May-2022 15:38:08 (+0530) INFO: closing UART
+06-May-2022 15:38:08 (+0530) INFO: closing UART
+06-May-2022 15:39:46 (+0530) INFO: --------------------------------------------------------
+06-May-2022 15:39:46 (+0530) INFO: Software version: SVN rev. 1111
+06-May-2022 15:39:46 (+0530) ERROR: Cannot open serial
+06-May-2022 15:39:46 (+0530) INFO: args: ()
+06-May-2022 15:39:46 (+0530) INFO: kwargs: {'callbacks': [('*', <bound method Notifier.passOnNotification of <Sniffer(Thread-6, initial)>>)]}
+06-May-2022 15:39:46 (+0530) INFO: board ID (random): 103
+06-May-2022 15:39:46 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:39:46 (+0530) INFO: starting scan
+06-May-2022 15:39:46 (+0530) INFO: closing UART
+06-May-2022 15:39:46 (+0530) ERROR: UART Error:Attempting to use a port that is not open
+06-May-2022 15:39:46 (+0530) ERROR: CRASH
+Traceback (most recent call last):
+  File "E:\Remote Setup\SnifferAPI\Sniffer.py", line 149, in run
+    self._setup()
+  File "E:\Remote Setup\SnifferAPI\SnifferCollector.py", line 73, in _setup
+    self._packetReader.setup()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 88, in setup
+    self.findSerialPort()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 237, in findSerialPort
+    self.sendPingReq()
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 197, in sendPingReq
+    self.sendPacket(PING_REQ, [], timeout)
+  File "E:\Remote Setup\SnifferAPI\Packet.py", line 186, in sendPacket
+    self.uart.writeList(packetString, timeout)
+  File "E:\Remote Setup\SnifferAPI\UART.py", line 86, in writeList
+    nBytes = self.ser.write(array)
+  File "C:\Users\suthapalli.akhil\AppData\Local\Continuum\anaconda3\lib\site-packages\serial\serialwin32.py", line 306, in write
+    raise PortNotOpenError()
+serial.serialutil.PortNotOpenError: Attempting to use a port that is not open
+06-May-2022 15:39:46 (+0530) INFO: closing UART
