@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import Button, Label,PhotoImage, Frame
-from picamera import PiCamera
+#from picamera import PiCamera
 import RPi.GPIO as gpio
 
 import threading, time
@@ -30,13 +30,14 @@ off = PhotoImage(file = "off.png")
 white = PhotoImage(file = "on.png",)
 
 #Camera
+"""
 camera = PiCamera()
 camera_on = True
 seperate_camera_on = True
 camera.resolution = (640, 480)
 camera.framerate = 32
 rawCapture = PiRGBArray(camera, size=(640, 480))
-time.sleep(0.1)
+time.sleep(0.1)"""
 
 def ign_switch_pressed():
 
@@ -123,27 +124,35 @@ def camera_switch():
         camera_button.config(text = "Start Camera")
 
 if __name__ =="__main__":
+	#root.geometry("700x700")
+	root.attributes('-zoomed',True)
 
-    #root.geometry("700x700")
-    root.attributes('-zoomed',True)
+	ign_label = Label(root, text = "Ignition Status", font=("Arial", 20))
+	ign_label.place(x=10,y=30)
 
-    ign_label = Label(root, text = "Ignition Status", font=("Arial", 20))
-    ign_label.place(x=10,y=30)
-
-    ign_switch = Button(root, image = off, command = ign_switch_pressed)
-    ign_switch.place(x=200, y = 20)
-
+	ign_switch = Button(root, image = off, command = ign_switch_pressed)
+	ign_switch.place(x=200, y = 20)
+	
     fuel_label = Label(root, text = "Fuel switch", font=("Arial", 20))
     fuel_label.place(x=10,y=80)
 
     fuel_switch = Button(root, image = off, command = fuel_switch_pressed)
     fuel_switch.place(x=200, y = 70)
+    """
 
     camera_button  =Button (root, text = "Start Camera", font=("Arial", 20),command = camera_switch)
     camera_button.place(x= 10, y= 150)
     seperate_camera_button  =Button (root, text = "Start Camera Seperately", font=("Arial", 20),command = seperate_camera_switch)
     seperate_camera_button.place(x= 200, y= 150)
+	fuel_label = Label(root, text = "Fuel switch", font=("Arial", 20))
+	fuel_label.place(x=10,y=60)"""
 
+	fuel_switch = Button(root, image = off, command = fuel_switch_pressed)
+	fuel_switch.place(x=200, y = 50)
 
+	#camera_button  =Button (root, text = "Start Camera", font=("Arial", 20),command = camera_switch)
+    #camera_button.place(x= 10, y= 150)
+    #seperate_camera_button  =Button (root, text = "Start Camera Seperately", font=("Arial", 20),command = seperate_camera_switch)
+    #seperate_camera_button.place(x= 200, y= 150)
 
-    root.mainloop()
+	root.mainloop()
