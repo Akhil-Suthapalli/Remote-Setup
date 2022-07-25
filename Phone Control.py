@@ -7,6 +7,7 @@ Created on Mon Jun 20 12:02:40 2022
 @Mobile: +91 9494475575
 """
 
+#this was for phone control library
 import os, subprocess, time
 
 #os.environ["ANDROID_HOME"] = "C:\\Users\\suthapalli.akhil\\AppData\\Local\\Android\\Sdk"
@@ -14,7 +15,6 @@ import os, subprocess, time
 adb_path = "C:\\Users\\suthapalli.akhil\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
 real_adb_path = os.path.realpath(adb_path)
 adb_obj = None
-
 
 
 class Adb():
@@ -71,19 +71,19 @@ class Adb():
 		#For pin kepad touch points can be traced to press for particular model
 		self.send_command("shell input keyevent 26")
 		time.sleep(0.5)
-		self.send_command("shell input swipe 500 800 500 200 100")
+		#self.send_command("shell input swipe 500 800 500 200 100")
 
 	def tap_at_point(self,x,y):
 
 		self.send_command("shell input tap "+str(int(x))+" "+str(int(y)))
 
-	def open_app(self):
+	def open_tvs_connect(self):
 		#Darwin Box implementation
-		self.send_command("shell am start com.darwinbox.darwinbox/com.darwinbox.splashscreen.ui.SplashScreenActivity")
+		self.send_command("shell am start com.tvsm.connect/com.tvsm.connect.SplashActivity")
 
 	def find_pid(self):
 
-		res = self.send_command("shell pidof com.akhil.chargeadequacy")
+		res = self.send_command("shell pidof com.tvsm.connect")
 
 		try:
 			pid = res.split()[0]
@@ -92,8 +92,11 @@ class Adb():
 
 		return pid
 
+	def get_current_activity(self):
 
-
+		res = self.send_command("shell dumpsys activity activities | findstr mResumedActivity")
+		result = res.split("\r\n")
+		return result[0]
 
 	def _logcat(self, pid):
 
@@ -101,19 +104,19 @@ class Adb():
 		return p
 
 
-def check_in():
-	global adb_obj
-
-	adb_obj.unlock()
-	time.sleep(3)
-	adb_obj.open_app()
-	time.sleep(10)
-	adb_obj
 
 
 adb_obj = Adb(adb_path = real_adb_path)
 
 
+#Main program starts from here
+
+
+from uiautomator import Device
+
+d = Device("ZY22469X5T") #Redmi Note 5 phone serial ID,,,,, Create a list to iterate all tests
+
+print(d.info)
 
 
 
