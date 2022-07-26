@@ -92,9 +92,14 @@ class Adb():
 
     def get_current_activity(self):
 
-        res = self.send_command("shell dumpsys activity activities | findstr mResumedActivity")
-        result = res.split("\r\n")
-        return result[0]
+        res = self.send_command("shell dumpsys activity activities | grep mResumedActivity")
+        #Using grep cause of Linux - for windows "finstr" is used
+        
+        
+        #this is for windows environment, is also aplicable for linux
+        result = res.split("\n")[0].split(" ")[-2]
+        return result
+        
 
     def _logcat(self, pid):
 
@@ -112,17 +117,90 @@ class Adb():
         self.send_command("shell am force-stop com.tvsm.connect")
 
 
-def main_loop():
+def initial_loop():
     
     adb_obj.unlock_device()
     time.sleep(2)
     #Unlock Device and wait for 2 seconds
     
     #clear all recent apps
+    adb_obj.clear_apps()
+    time.sleep(1)
+    #if the app doesn't get killed in the baove process
     adb_obj.kill_tvs_app()
+    time.sleep(2)
+    
+    adb_obj.open_tvs_connect()
+    time.sleep(10)
+    
+    start_time = time.time()
+    
+    ign_switch_pressed()
+    time.sleep(5)
+    
+    while(True):
+        
+        a = adb_obj.get_current_activity()
+        if (a != "com.tvsm.connect/.dashboard.HomeActivity"):
+            break
+            
+        
+    
+    stop_time = time.time()
+    
+    print("time taken for initial Auto Connection: ",stop_time-start_time)
     
     
     
     
+def time_taken_for_end_ride():
+    
+    start_time = time.time()
+    ign_switch_pressed()
+    
+    while(True):
+        a = adb_obj.get_current_activity()
+        if (a == "com.tvsm.connect/.dashboard.HomeActivity"):
+            break
+        
+    stop_time = time.time()
+    
+    return stop_time-start_time
+
+
+def auto_connection_test():
+    
+    start_time = time.time()
+    
+    ign_switch_pressed()
+    
+    while(True):
+        
+        a = adb_obj.get_current_activity()
+        if (a != "com.tvsm.connect/.dashboard.HomeActivity"):
+            break
+            
+        
+    
+    stop_time = time.time()
+    
+    return stop_time-start_time
+
+
+def main_loop():
+     
+     initial_loop()
+     time.sleep(20)
+     
+     l = time_taken_for_end_ride()
+     print("Time Taken for ending Trip: ",l)
+     
+     time.sleep(10)
+     
+     l = auto_connection_test()
+     print("Time Taken for auto connection after ign off: ",l)
+     
+
 adb_obj = Adb()
 main_loop()
+
